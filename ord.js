@@ -47,8 +47,8 @@ draw = () => {
     whip.render();
     let end = whip.segments[whip.segments.length - 1].pos;
     if (
-      end.x > people[index].x &&
-      end.x < people[index].x + people[index].dx &&
+      end.x > people[index].x - people[index].dx / 2 &&
+      end.x < people[index].x + people[index].dx / 2 &&
       end.y > people[index].y - people[index].dx / 2 &&
       end.y < people[index].y + people[index].dx / 2
     ) {
